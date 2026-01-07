@@ -9,7 +9,7 @@ Requirements: [Bun](https://bun.com) v1
 1. Clone this repo
 2. Run `bun install`
 3. Start local dev with `bun run dev`
-4. Navigate to `http://localhost:3000/markdown` to view the 
+4. Navigate to `http://localhost:3000/markdown` to view the beautiful email compatible HTML
 
 ## How does it work?
 
