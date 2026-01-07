@@ -1,6 +1,6 @@
 # Build HTML Email using Vue + Markdown
 
-A proof of concept [Nuxt](https://nuxt.com) website that... renders extremely compatible HTML email from Markdown + Vue components ([MDC](https://nuxt.com/modules/mdc)).
+A proof of concept [Nuxt](https://nuxt.com) website that... renders extremely compatible HTML email from Markdown + Vue components ([MDC]).
 
 ## Setup
 
@@ -19,7 +19,7 @@ This project uses Nuxt and it's ecosystem's insane configurability to [build val
 
 ### Markdown?
 
-MDC allows us to write Markdown and [customize the HTML the Markdown is converted to using Prose components](https://nuxt.com/modules/mdc#prose-components). In this project, Prose components are implemented using MJML components, so Markdown can be rendered to email compatible HTML with MJML.
+[MDC] allows us to write Markdown and [customize the HTML the Markdown is converted to using Prose components](https://nuxt.com/modules/mdc#prose-components). In this project, Prose components are implemented using MJML components, so Markdown can be rendered to email compatible HTML with MJML.
 
 ## Why?
 
@@ -46,3 +46,5 @@ At your own risk.
 - [ ] Implement more Prose components
 - [ ] Figure out `mj-head`
 - [ ] Maybe just make this a nuxt module
+
+[MDC]: https://nuxt.com/modules/mdc
