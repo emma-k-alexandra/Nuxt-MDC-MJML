@@ -26,7 +26,7 @@ This project uses Nuxt and it's ecosystem's insane configurability to [build val
 Where the cool customization and implementation is.
 
 - [nuxt.config.ts](./nuxt.config.ts)
-- [mjml plugin](./app/plugins/mjml.ts)
+- [MJML Nuxt plugin](./app/plugins/mjml.ts)
 - [Layout](./app/layouts/default.vue)
 - [Markdown route](./app/pages/markdown.vue)
 - [Prose Components](./app/components/prose)
