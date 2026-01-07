@@ -37,7 +37,7 @@ At your own risk.
 
 - Doesn't support the fun MJML stuff
     - `mj-include`
-    - custom components
+    - custom components (probably just write them in Vue)
     - All the cool dynamic stuff
 - Not all Prose components are implemented. Most aren't tbh.
 
