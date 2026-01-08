@@ -1,5 +1,7 @@
 <template>
-  <ul>
-    <slot />
-  </ul>
+  <mj-text>
+    <ul>
+      <slot />
+    </ul>
+  </mj-text>
 </template>

@@ -1,3 +1,3 @@
 <template>
-  <code><slot /></code>
+  <mj-text><code><slot /></code></mj-text>
 </template>

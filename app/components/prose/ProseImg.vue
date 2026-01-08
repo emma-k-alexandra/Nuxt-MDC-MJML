@@ -1,45 +1,32 @@
 <template>
-  <component
-    :is="ImageComponent"
-    :src="refinedSrc"
-    :alt="props.alt"
-    :width="props.width"
-    :height="props.height"
-  />
+  <MDCSlot unwrap="mj-text">
+    <mj-image :src="refinedSrc" :alt :width :height />
+  </MDCSlot>
 </template>
 
 <script setup lang="ts">
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
 import { useRuntimeConfig, computed } from '#imports'
 
-import ImageComponent from '#build/mdc-image-component.mjs'
-
-const props = defineProps({
-  src: {
-    type: String,
-    default: '',
-  },
-  alt: {
-    type: String,
-    default: '',
-  },
-  width: {
-    type: [String, Number],
-    default: undefined,
-  },
-  height: {
-    type: [String, Number],
-    default: undefined,
-  },
-})
+const {
+  src = '',
+  alt = '',
+  width = undefined,
+  height = undefined
+} = defineProps<{
+  src?: string,
+  alt?: string,
+  width?: number | string,
+  height?: number | string
+}>()
 
 const refinedSrc = computed(() => {
-  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
+  if (src?.startsWith('/') && !src.startsWith('//')) {
     const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL))
-    if (_base !== '/' && !props.src.startsWith(_base)) {
-      return joinURL(_base, props.src)
+    if (_base !== '/' && !src.startsWith(_base)) {
+      return joinURL(_base, src)
     }
   }
-  return props.src
+  return src
 })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <mj-table>
     <slot />
-  </table>
+  </mj-table>
 </template>

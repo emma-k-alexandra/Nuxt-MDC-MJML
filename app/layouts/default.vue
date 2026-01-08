@@ -3,7 +3,7 @@
     <!---->
   </mj-head>
   <mj-body>
-    <mj-section>
+    <mj-section full-width>
       <mj-column>
         <slot />
       </mj-column>

@@ -1,3 +1,3 @@
 <template>
-  <hr>
+  <mj-divider />
 </template>
